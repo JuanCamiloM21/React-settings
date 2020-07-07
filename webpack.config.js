@@ -9,7 +9,7 @@ module.exports = {
     filename: 'bundle.js',
   },
   resolve: {
-    extensions: ['js', 'jsx'],
+    extensions: ['.js', '.jsx'],
   },
   module: {
     rules: [
@@ -35,7 +35,7 @@ module.exports = {
         use: [
           {
             loader: 'file-loader',
-            options: { name: 'assets/[hash.[ext]' },
+            options: { name: 'assets/[hash].[ext]' },
           },
         ],
       },
