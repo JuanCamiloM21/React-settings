@@ -1,5 +1,5 @@
 const path = require('path');
-const HTMLWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
@@ -49,7 +49,7 @@ module.exports = {
     historyApiFallback: true,
   },
   plugins: [
-    new HTMLWebpackPlugin({
+    new HtmlWebpackPlugin({
       template: './public/index.html',
       filename: './index.html',
     }),
