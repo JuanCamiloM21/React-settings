@@ -28,7 +28,11 @@ module.exports = {
       },
       {
         test: /\.(s*)css$/,
-        use: [{ loader: MiniCssExtractPlugin.loader }, 'css-loader', 'sass-loader'],
+        use: [
+          { loader: MiniCssExtractPlugin.loader },
+          'css-loader',
+          'sass-loader',
+        ],
       },
       {
         test: /\.(png|gif|jpg)$/,
@@ -40,6 +44,9 @@ module.exports = {
         ],
       },
     ],
+  },
+  devServer: {
+    historyApiFallback: true,
   },
   plugins: [
     new HTMLWebpackPlugin({

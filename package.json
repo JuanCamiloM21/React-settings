@@ -23,7 +23,8 @@
   "homepage": "https://github.com/JuanCamilo21/E-Commerce-React#readme",
   "dependencies": {
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.10.4",
